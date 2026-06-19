@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳客 · 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f4f6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1e2a3a;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* 标题区 / hero */
+        .hero {
+            text-align: center;
+            padding: 2.8rem 1.2rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.1rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0b1c2f;
+        }
+
+        .hero .sub {
+            margin-top: 0.6rem;
+            font-size: 0.95rem;
+            color: #4b5a6e;
+            max-width: 620px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 1px solid #d0d7de;
+            padding-top: 0.8rem;
+        }
+
+        /* 卡片通用 */
+        .card {
+            background: #ffffff;
+            border: 1px solid #dde2e9;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 6px 18px rgba(0, 0, 0, 0.02);
+            padding: 1.8rem 2rem;
+            margin-bottom: 1.6rem;
+            transition: box-shadow 0.15s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.03);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #0b1c2f;
+            border-left: 3px solid #3b7bae;
+            padding-left: 0.7rem;
+        }
+
+        .card p,
+        .card li {
+            color: #2c3a4e;
+            font-size: 0.95rem;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 0.2rem;
+        }
+
+        .card li {
+            padding: 0.25rem 0 0.25rem 1.2rem;
+            position: relative;
+        }
+
+        .card li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3b7bae;
+            font-weight: 600;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.6rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eef2f6;
+            color: #1f3246;
+            border-radius: 20px;
+            padding: 0.1rem 0.8rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-right: 0.3rem;
+            border: 1px solid #d0d7de;
+        }
+
+        .faq-item {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #eaeef3;
+        }
+
+        .faq-item:last-child {
+            border-bottom: 0;
+        }
+
+        .faq-q {
+            font-weight: 600;
+            color: #0b1c2f;
+            font-size: 0.95rem;
+        }
+
+        .faq-a {
+            margin-top: 0.2rem;
+            color: #3a4a5e;
+            font-size: 0.9rem;
+        }
+
+        .notice {
+            background: #f6f8fa;
+            border: 1px solid #d3dbe3;
+            border-radius: 10px;
+            padding: 1rem 1.4rem;
+            margin: 1rem 0 0.5rem;
+            font-size: 0.9rem;
+            color: #2c3a4e;
+        }
+
+        .notice strong {
+            color: #0b1c2f;
+        }
+
+        a {
+            color: #1f5a8c;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.1s;
+        }
+
+        a:hover {
+            border-bottom-color: #1f5a8c;
+        }
+
+        /* 响应式 */
+        @media (max-width: 680px) {
+            body {
+                padding: 1.2rem 0.6rem;
+            }
+            .card {
+                padding: 1.3rem 1.2rem;
+            }
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #6b7a8d;
+            padding: 2rem 0 1rem;
+            border-top: 1px solid #dde2e9;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero -->
+    <div class="hero">
+        <h1>澳客 · 产品摘要</h1>
+        <div class="sub">
+            面向需要快速理解网站用途的用户 · 从信息结构到场景适配
+        </div>
+    </div>
+
+    <!-- 介绍卡片：一句话摘要 -->
+    <div class="card">
+        <h2>平台摘要</h2>
+        <p>
+            <a href="https://web-cn-aoke.com">澳客</a> 是一个以内容聚合与信息服务为核心的站点，围绕特定主题提供结构化的数据展示、检索辅助与信息导航。
+            页面设计偏向工具属性，强调信息效率而非装饰性，适合主动寻找特定内容的用户。
+        </p>
+        <div style="margin-top: 0.8rem;">
+            <span class="tag">信息聚合</span>
+            <span class="tag">分类检索</span>
+            <span class="tag">轻量界面</span>
+        </div>
+    </div>
+
+    <!-- 两栏：亮点 + 使用建议 -->
+    <div class="grid-2">
+        <div class="card">
+            <h2>功能亮点</h2>
+            <ul>
+                <li>清晰的条目层级，减少浏览中的认知负荷</li>
+                <li>快速定位目标内容，支持多维度筛选</li>
+                <li>低干扰界面，聚焦实质信息</li>
+                <li>定期更新数据源与分类结构</li>
+                <li>无需注册即可使用核心功能</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>使用建议</h2>
+            <ul>
+                <li>优先使用搜索或分类导航缩小范围</li>
+                <li>留意页面顶部的上下文提示</li>
+                <li>如遇数据延迟，可稍后刷新重试</li>
+                <li>桌面浏览器体验优于移动端窄屏</li>
+                <li>反馈问题可参考页面底部备注</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 场景说明卡片 -->
+    <div class="card">
+        <h2>适用场景举例</h2>
+        <p>
+            · 需要快速获取某类信息概览，而不希望在多个页面间跳转。<br>
+            · 对时效性要求中等，更看重信息组织的逻辑性。<br>
+            · 已经在使用其他工具辅助决策，将 <a href="https://web-cn-aoke.com">澳客</a> 作为信息参照之一。<br>
+            · 希望避开强营销或过度包装的页面，选择更克制的呈现方式。
+        </p>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="card">
+        <h2>常见疑问 · 摘要</h2>
+        <div class="faq-item">
+            <div class="faq-q">数据来源可靠吗？</div>
+            <div class="faq-a">平台整合自多个公开渠道，并经过格式统一与去重处理。建议对关键数据二次核对。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">是否需要付费？</div>
+            <div class="faq-a">当前所有内容免费浏览，不设付费墙。未来若有变化会提前公告。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">页面加载速度如何？</div>
+            <div class="faq-a">静态资源经过优化，多数情况下可在 2 秒内完成首屏渲染。网络波动可能略有影响。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">移动端适配情况？</div>
+            <div class="faq-a">支持响应式布局，但部分表格与多列布局在小屏上会折叠，建议横屏或使用平板。</div>
+        </div>
+    </div>
+
+    <!-- 可信但克制的访问说明 -->
+    <div class="notice">
+        <strong>访问说明</strong> · <a href="https://web-cn-aoke.com">澳客</a> 是一个独立维护的信息站点，不提供投资建议、预测保证或任何形式的法律承诺。
+        内容仅供个人参考，请依据自身判断使用。若发现链接失效或数据异常，欢迎通过站内反馈渠道告知。
+    </div>
+
+    <div class="footer-note">
+        产品说明 · 版本 2025.03 · 界面以实际页面为准
+    </div>
+
+</div>
+</body>
+</html>

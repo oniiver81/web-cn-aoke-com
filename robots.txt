@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://oniiver81.github.io/web-cn-aoke-com/sitemap.xml
